@@ -73,7 +73,7 @@ class NoteListState extends State<NoteList> {
 						subtitle: Text(this.noteList[position].date),
 
 						trailing: GestureDetector(
-							child: Icon(Icons.delete, color: Colors.grey,),
+							child: Icon(Icons.delete, color: Colors.pink,),
 							onTap: () {
 								_delete(context, noteList[position]);
 							},
@@ -95,14 +95,14 @@ class NoteListState extends State<NoteList> {
 	Color getPriorityColor(int priority) {
 		switch (priority) {
 			case 1:
-				return Colors.black;
+				return Colors.blue;
 				break;
 			case 2:
-				return Colors.orange;
+				return Colors.red;
 				break;
 
 			default:
-				return Colors.orange;
+				return Colors.red;
 		}
 	}
 
